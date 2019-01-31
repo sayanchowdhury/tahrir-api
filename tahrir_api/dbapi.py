@@ -946,7 +946,7 @@ class TahrirDatabase(object):
         # own position, but needs to demote the rest).
 
         # Otherwise, take our calculations and commit them to the db.
-        for _person, data in leaderboard.items():
+        for _person, data in list(leaderboard.items()):
             _person.rank = data['rank']
 
         self.session.flush()

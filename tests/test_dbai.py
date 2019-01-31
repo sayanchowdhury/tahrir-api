@@ -1,4 +1,4 @@
-from __future__ import unicode_literals
+
 
 from tahrir_api.dbapi import TahrirDatabase
 from tahrir_api.model import DBSession, DeclarativeBase
